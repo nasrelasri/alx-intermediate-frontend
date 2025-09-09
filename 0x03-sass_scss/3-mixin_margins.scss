@@ -1,0 +1,14 @@
+// Define a mixin that accepts a value
+@mixin set-margins($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+// Use the mixin with different values
+body {
+  @include set-margins(10px);
+}
+
+div {
+  @include set-margins(15px);
+}
